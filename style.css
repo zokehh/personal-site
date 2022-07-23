@@ -10,8 +10,16 @@ DARK BLUE: #1D3557
 
 body {
     margin: 0;
+    padding: 0;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#flex {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #e4bafc;
 }
 
 #navigation {
@@ -25,6 +33,7 @@ body {
     background-position-y: 5%;
     background-size: cover;
     text-shadow: 4px 4px black;
+    animation: backg 12s infinite ease-in-out;
 }
 
 h1 {
@@ -63,8 +72,12 @@ img {
     width: 200px;
 }
 
+#wrapper {
+    background-color: #d0f4de;
+    padding: 35px;
+}
+
 #guide {
-    margin: 25px;
     padding: 30px;
     width: 600px;
     margin-left: auto;
@@ -80,5 +93,20 @@ img {
     }
     to {
         transform: rotateZ(360deg);
+    }
+}
+
+@keyframes backg {
+    from {
+        background-image: url("warsaw.jpg");
+    }
+    33% {
+        background-image: url("1249472.jpg");
+    }
+    66% {
+        background-image: url("city.jpg");
+    }
+    to {
+        background-image: url("warsaw.jpg");
     }
 }
